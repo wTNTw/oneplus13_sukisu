@@ -23,7 +23,7 @@ on:
       enable_feature_z:
        description: "是否添加风驰驱动"
        required: false
-       default: false
+       default: true
        type: boolean
        
 
