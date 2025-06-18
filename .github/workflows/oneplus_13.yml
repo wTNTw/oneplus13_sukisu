@@ -325,7 +325,7 @@ jobs:
          cd ./AnyKernel3 || { echo "❌ 错误：AnyKernel3 目录不存在"; exit 1; }
          target_zip="SuKiSu_${{ env.KSUVER }}_${{ github.event.inputs.KERNEL_SUFFIX }}.zip"
          dir_name="SuKiSu_${{ env.KSUVER }}_${{ github.event.inputs.KERNEL_SUFFIX }}"
-        (cd "$dir_name" && zip -r "../$target_zip" * )
+         (cd "$dir_name" && zip -r "../$target_zip" * )
 
       - name: Verify ZIP File Exists
         run: |
