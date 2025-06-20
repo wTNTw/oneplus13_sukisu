@@ -330,7 +330,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
          tag_name: oneplus_13
-         name: "OnePlus 13 Kernel - ${{ github.event.inputs.KERNEL_SUFFIX }}"
+         name: "OnePlus 13 - ${{ env.KSUVER }}"
          body: |
           ### OnePlus 13 Kernel Build
           **版本信息**  
